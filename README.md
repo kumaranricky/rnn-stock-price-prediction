@@ -5,15 +5,13 @@
 # <p align = "center"> Stock Price Prediction </p>
 
 ## AIM
-
 To develop a Recurrent Neural Network model for stock price prediction.
 
 ## Problem Statement and Dataset
-
+We are developing the RNN model to predict the stock prices of Google using the dataset provided. The dataset has many features, but we will be predicting the "Open" feauture alone. We will be using a sequence of 60 readings to predict the 61st reading.we have taken 70 Inputs with 70 Neurons in the RNN Layer (hidden) and one neuron for the Output Layer.These parameters can be changed as per requirements.
 
 ## Neural Network Model
-
-Include the neural network model diagram.
+![WhatsApp Image 2022-10-16 at 3 29 36 PM (1)](https://user-images.githubusercontent.com/75243072/196029969-b5541f66-234e-4244-aaf7-53820a8aab3f.jpeg)
 
 ## DESIGN STEPS
 
@@ -33,8 +31,10 @@ Create a RNN model with required no of neurons with one output neuron.
 Fit the model and load testing dataset.For x_test,combine the values of both datasets.
 
 ### STEP 6:
-Follow the same splitting.Make the prediction and plot graph with mse value
+Follow the same splitting.Make the prediction.
 
+### STEP 7:
+Plot graph and find the mse value.
 
 
 
@@ -43,6 +43,8 @@ Follow the same splitting.Make the prediction and plot graph with mse value
 ```python
 # Developed By:KUMARAN.B
 # Register Number:212220230026
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -98,7 +100,7 @@ plt.show()
 from sklearn.metrics import mean_squared_error as mse
 mse(y_test,predicted_stock_price)
 ```
-## OUTPUT
+## <br>OUTPUT
 
 ### True Stock Price, Predicted Stock Price vs time
 ![Screenshot (446)](https://user-images.githubusercontent.com/75243072/195996829-82b6dce8-3da5-4bbf-af0e-2e1d529492d6.png)
@@ -108,5 +110,5 @@ mse(y_test,predicted_stock_price)
 
 
 
-## RESULT
+## <br><br><br><br>RESULT
 Thus, a Recurrent Neural Network model for stock price prediction is developed.

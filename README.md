@@ -1,6 +1,6 @@
 ### EXP NO: 05
 
-### .
+### Date:16.10.2022
 
 # <p align = "center"> Stock Price Prediction </p>
 
